@@ -39,7 +39,46 @@ namespace PatternChallenge
                 }
                 Console.WriteLine();
             }
+           if(side == Convert.ToInt32(Console.ReadLine()))
+            {
+                    Console.WriteLine(side);
+            }
 
+        }     //*       *********
+        //     **       *       *
+        //              *********
+        //    ***
+        //   ****
+        public void HollowRectangular()
+        {
+            Console.WriteLine("Enter number of rows in the hollow rectangular pattern");
+            int row = Convert.ToInt32(Console.ReadLine());//3
+            Console.WriteLine("Enter number of col in the hollow rectangular pattern");
+            int col = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < row; i++)
+            {
+                if (i == 0 || i == row - 1)
+                {
+                    for (int j = 0; j < col; j++)
+                    {
+                        Console.Write("* ");
+                    }
+                    Console.WriteLine();
+                }
+                else
+                {
+                    Console.Write("* ");
+                    for (int k = 0; k < col-2; k++)
+                    {
+                        Console.Write("  ");
+
+
+                    }
+                    Console.Write("* ");
+                    Console.WriteLine();
+                }
+               
+            }
         }
     }
 }

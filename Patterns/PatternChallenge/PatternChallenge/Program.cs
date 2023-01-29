@@ -1,5 +1,6 @@
 ﻿using PatternChallenge;
 
 PrintRightTriangle t =new();
-t.Print();
-t.PrintSquare();
+//t.Print();
+//t.PrintSquare();
+t.HollowRectangular();
