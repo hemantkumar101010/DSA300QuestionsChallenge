@@ -21,5 +21,25 @@ namespace PatternChallenge
                 Console.WriteLine();
             }
         }
+        //* * * * *
+        //* * * * *
+        //* * * * *
+        //* * * * *
+        //* * * * *
+
+        public void PrintSquare()
+        {
+            Console.WriteLine("Enter number of col/row in the square pattern");
+            int side = Convert.ToInt32(Console.ReadLine());
+            for (int i = 0; i < side; i++)
+            {
+                for (int j = 0; j < side; j++)
+                {
+                    Console.Write("* ");
+                }
+                Console.WriteLine();
+            }
+
+        }
     }
 }
